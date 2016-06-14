@@ -6,9 +6,9 @@ package be.gerard.example.value;
  * @author bartgerard
  * @version v0.0.1
  */
-public class Username2 extends Name {
+public class Username extends Name {
 
-    public Username2(String value) {
+    public Username(String value) {
         super(value);
     }
 
