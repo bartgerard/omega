@@ -3,7 +3,7 @@ package be.gerard.example.model;
 import be.gerard.example.value.FirstName;
 import be.gerard.example.value.LastName;
 import be.gerard.example.value.UserId;
-import be.gerard.example.value.Username;
+import be.gerard.example.value.Username2;
 
 /**
  * User
@@ -15,7 +15,7 @@ public class User {
 
     private UserId id;
 
-    private Username username;
+    private Username2 username;
 
     private FirstName firstName;
 
@@ -29,11 +29,11 @@ public class User {
         this.id = id;
     }
 
-    public Username getUsername() {
+    public Username2 getUsername() {
         return username;
     }
 
-    public void setUsername(Username username) {
+    public void setUsername(Username2 username) {
         this.username = username;
     }
 
