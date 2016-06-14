@@ -1,4 +1,4 @@
-package be.gerard.example.config;
+package be.gerard.example.controller;
 
 import be.gerard.example.model.User;
 import be.gerard.provider.factory.Factory;

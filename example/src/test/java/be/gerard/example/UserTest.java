@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -17,7 +17,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @version v0.0.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = ExampleConfiguration.class)
+@SpringApplicationConfiguration(classes = ExampleConfiguration.class)
 public class UserTest {
 
     @Autowired
@@ -31,7 +31,6 @@ public class UserTest {
         Assert.assertNotNull(user.getId());
         Assert.assertNotNull(user.getFirstName());
         Assert.assertNotNull(user.getLastName());
-
     }
 
 }
