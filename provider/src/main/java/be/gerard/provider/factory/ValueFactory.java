@@ -41,17 +41,6 @@ public class ValueFactory implements Factory {
         for (Field field : object.getClass().getDeclaredFields()) {
             findByType(field.getType()).ifPresent(provider -> setField(field, object, provider));
         }
-    }    private static <T> void setField(Field field, T object, ValueProvider<?> provider) {
-        final boolean isAccessible = field.isAccessible();
-        field.setAccessible(true);
-
-        try {
-            field.set(object, provider.getSupplier().get());
-        } catch (IllegalAccessException e) {
-            e.printStackTrace(); // TODO
-        }
-
-        field.setAccessible(isAccessible);
     }
 
     protected Optional<ValueProvider<?>> findByType(Class<?> type) {

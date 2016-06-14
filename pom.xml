@@ -14,7 +14,6 @@
         <module>provider</module>
         <module>bdd</module>
         <module>example</module>
-        <module>data</module>
         <module>validation</module>
     </modules>
 
@@ -83,7 +82,7 @@
             <dependency>
                 <groupId>net.serenity-bdd</groupId>
                 <artifactId>serenity-cucumber</artifactId>
-                <version>${serenity.version}</version>
+                <version>1.1.3</version>
             </dependency>
 
         </dependencies>

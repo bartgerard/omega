@@ -3,6 +3,7 @@ package be.gerard.example;
 import be.gerard.example.config.ExampleConfiguration;
 import be.gerard.example.model.User;
 import be.gerard.provider.factory.Factory;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,11 @@ public class UserTest {
     @Test
     public void test1() {
         User user = factory.get(User::new);
+
+        Assert.assertNotNull(user);
+        Assert.assertNotNull(user.getId());
+        Assert.assertNotNull(user.getFirstName());
+        Assert.assertNotNull(user.getLastName());
 
     }
 
