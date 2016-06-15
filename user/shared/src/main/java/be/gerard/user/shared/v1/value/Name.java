@@ -1,6 +1,6 @@
 package be.gerard.user.shared.v1.value;
 
-import be.gerard.value.Value;
+import be.gerard.value.shared.v1.Value;
 
 /**
  * Name

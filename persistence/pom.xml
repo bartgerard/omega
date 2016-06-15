@@ -9,21 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>provider</artifactId>
+    <artifactId>persistence</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>shared</module>
+    </modules>
 
-    <dependencies>
-
-        <!-- Me! Me! Me! -->
-        <dependency>
-            <groupId>be.gerard</groupId>
-            <artifactId>value-shared</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.fluttercode.datafactory</groupId>
-            <artifactId>datafactory</artifactId>
-        </dependency>
-
-    </dependencies>
 
 </project>

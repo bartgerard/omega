@@ -1,9 +1,14 @@
 package be.gerard.user.service.model;
 
+import be.gerard.persistence.shared.v1.BaseRecord;
 import be.gerard.user.service.value.FirstNameRecord;
 import be.gerard.user.service.value.LastNameRecord;
-import be.gerard.user.service.value.UserIdRecord;
 import be.gerard.user.service.value.UsernameRecord;
+
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 /**
  * User
@@ -11,23 +16,19 @@ import be.gerard.user.service.value.UsernameRecord;
  * @author bartgerard
  * @version v0.0.1
  */
-public class UserRecord {
+@Entity
+@Table(name = "user")
+@SequenceGenerator(name = BaseRecord.SEQUENCE_GENERATOR, sequenceName = "s_user", allocationSize = BaseRecord.SEQUENCE_ALLOCATION_SIZE)
+public class UserRecord extends BaseRecord {
 
-    private UserIdRecord id;
-
+    @Embedded
     private UsernameRecord username;
 
+    @Embedded
     private FirstNameRecord firstName;
 
+    @Embedded
     private LastNameRecord lastName;
-
-    public UserIdRecord getId() {
-        return id;
-    }
-
-    public void setId(UserIdRecord id) {
-        this.id = id;
-    }
 
     public UsernameRecord getUsername() {
         return username;
@@ -51,16 +52,6 @@ public class UserRecord {
 
     public void setLastName(LastNameRecord lastName) {
         this.lastName = lastName;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "firstName=" + firstName +
-                ", lastName=" + lastName +
-                ", id=" + id +
-                ", username=" + username +
-                '}';
     }
 
 }

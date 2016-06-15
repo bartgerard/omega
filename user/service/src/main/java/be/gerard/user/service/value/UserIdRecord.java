@@ -1,6 +1,9 @@
 package be.gerard.user.service.value;
 
-import be.gerard.value.Id;
+import be.gerard.value.service.IdRecord;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
 
 /**
  * UserId
@@ -8,7 +11,8 @@ import be.gerard.value.Id;
  * @author bartgerard
  * @version v0.0.1
  */
-public class UserIdRecord extends Id<Long> {
+@AttributeOverride(name = "id", column = @Column(name = "user_id"))
+public class UserIdRecord extends IdRecord {
 
     public UserIdRecord(Long value) {
         super(value);

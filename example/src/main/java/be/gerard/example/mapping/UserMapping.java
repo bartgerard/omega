@@ -6,7 +6,7 @@ import be.gerard.provider.mapping.ValueMapping;
 import be.gerard.user.shared.v1.value.FirstName;
 import be.gerard.user.shared.v1.value.LastName;
 import be.gerard.user.shared.v1.value.UserId;
-import be.gerard.value.Value;
+import be.gerard.value.shared.v1.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;

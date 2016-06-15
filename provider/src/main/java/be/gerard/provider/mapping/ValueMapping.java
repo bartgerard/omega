@@ -1,7 +1,7 @@
 package be.gerard.provider.mapping;
 
 import be.gerard.provider.data.ValueProvider;
-import be.gerard.value.Value;
+import be.gerard.value.shared.v1.Value;
 
 import java.util.Set;
 

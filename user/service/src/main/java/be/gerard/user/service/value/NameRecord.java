@@ -1,6 +1,9 @@
 package be.gerard.user.service.value;
 
-import be.gerard.value.Value;
+import be.gerard.value.service.ValueRecord;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
 
 /**
  * Name
@@ -8,7 +11,8 @@ import be.gerard.value.Value;
  * @author bartgerard
  * @version v0.0.1
  */
-public abstract class NameRecord extends Value<String> {
+@AttributeOverride(name = "value", column = @Column(name = "name"))
+public abstract class NameRecord extends ValueRecord<String> {
 
     public NameRecord(String value) {
         super(value);

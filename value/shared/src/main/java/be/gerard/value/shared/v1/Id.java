@@ -1,4 +1,4 @@
-package be.gerard.value;
+package be.gerard.value.shared.v1;
 
 import java.io.Serializable;
 

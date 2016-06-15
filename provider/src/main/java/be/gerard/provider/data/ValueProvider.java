@@ -1,6 +1,6 @@
 package be.gerard.provider.data;
 
-import be.gerard.value.Value;
+import be.gerard.value.shared.v1.Value;
 
 import java.util.Objects;
 import java.util.function.Supplier;

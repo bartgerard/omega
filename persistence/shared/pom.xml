@@ -3,25 +3,19 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>omega</artifactId>
+        <artifactId>persistence</artifactId>
         <groupId>be.gerard</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>provider</artifactId>
+    <artifactId>persistence-shared</artifactId>
 
     <dependencies>
 
-        <!-- Me! Me! Me! -->
         <dependency>
             <groupId>be.gerard</groupId>
-            <artifactId>value-shared</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.fluttercode.datafactory</groupId>
-            <artifactId>datafactory</artifactId>
+            <artifactId>value-service</artifactId>
         </dependency>
 
     </dependencies>

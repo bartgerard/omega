@@ -1,5 +1,7 @@
-package be.gerard.value;
+package be.gerard.value.service;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -9,11 +11,13 @@ import java.util.Objects;
  * @author bartgerard
  * @version v0.0.1
  */
-public class Value<T extends Serializable> implements Serializable {
+@Embeddable
+public class ValueRecord<T extends Serializable> implements Serializable {
 
+    @Column(name = "value")
     private final T value;
 
-    public Value(T value) {
+    public ValueRecord(T value) {
         this.value = value;
     }
 
@@ -31,7 +35,7 @@ public class Value<T extends Serializable> implements Serializable {
             return false;
         }
 
-        Value<?> that = (Value<?>) o;
+        ValueRecord<?> that = (ValueRecord<?>) o;
         return Objects.equals(value, that.value);
     }
 
