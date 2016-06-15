@@ -1,8 +1,8 @@
 package be.gerard.example;
 
 import be.gerard.example.config.ExampleConfiguration;
-import be.gerard.example.model.User;
 import be.gerard.provider.factory.Factory;
+import be.gerard.user.shared.v1.model.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

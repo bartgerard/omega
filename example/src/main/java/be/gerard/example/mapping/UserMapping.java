@@ -1,11 +1,11 @@
 package be.gerard.example.mapping;
 
 import be.gerard.example.data.UserData;
-import be.gerard.example.value.FirstName;
-import be.gerard.example.value.LastName;
-import be.gerard.example.value.UserId;
 import be.gerard.provider.data.ValueProvider;
 import be.gerard.provider.mapping.ValueMapping;
+import be.gerard.user.shared.v1.value.FirstName;
+import be.gerard.user.shared.v1.value.LastName;
+import be.gerard.user.shared.v1.value.UserId;
 import be.gerard.value.Value;
 import org.springframework.stereotype.Component;
 

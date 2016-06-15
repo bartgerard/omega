@@ -1,8 +1,8 @@
 package be.gerard.example.data;
 
-import be.gerard.example.value.FirstName;
-import be.gerard.example.value.LastName;
-import be.gerard.example.value.UserId;
+import be.gerard.user.shared.v1.value.FirstName;
+import be.gerard.user.shared.v1.value.LastName;
+import be.gerard.user.shared.v1.value.UserId;
 import org.fluttercode.datafactory.impl.DataFactory;
 
 import java.util.Random;

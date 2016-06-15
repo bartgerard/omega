@@ -1,4 +1,4 @@
-package be.gerard.example.value;
+package be.gerard.user.shared.v1.value;
 
 /**
  * UserName

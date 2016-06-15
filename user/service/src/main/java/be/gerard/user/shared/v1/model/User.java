@@ -1,9 +1,9 @@
-package be.gerard.example.model;
+package be.gerard.user.shared.v1.model;
 
-import be.gerard.example.value.FirstName;
-import be.gerard.example.value.LastName;
-import be.gerard.example.value.UserId;
-import be.gerard.example.value.Username;
+import be.gerard.user.shared.v1.value.FirstName;
+import be.gerard.user.shared.v1.value.LastName;
+import be.gerard.user.shared.v1.value.UserId;
+import be.gerard.user.shared.v1.value.Username;
 
 /**
  * User

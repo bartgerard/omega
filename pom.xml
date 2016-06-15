@@ -15,6 +15,7 @@
         <module>bdd</module>
         <module>example</module>
         <module>validation</module>
+        <module>user</module>
     </modules>
 
     <parent>
@@ -56,6 +57,11 @@
             <dependency>
                 <groupId>be.gerard</groupId>
                 <artifactId>bdd</artifactId>
+                <version>${gerard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>be.gerard</groupId>
+                <artifactId>user-shared</artifactId>
                 <version>${gerard.version}</version>
             </dependency>
 
