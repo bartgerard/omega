@@ -11,5 +11,13 @@
 
     <artifactId>user-shared</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>be.gerard</groupId>
+            <artifactId>value</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>
