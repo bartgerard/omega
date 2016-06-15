@@ -1,7 +1,6 @@
 package be.gerard.user.service.dao;
 
 import be.gerard.user.service.model.UserRecord;
-import be.gerard.user.service.value.UserIdRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -10,5 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author bartgerard
  * @version v0.0.1
  */
-public interface UserDao extends JpaRepository<UserRecord, UserIdRecord> {
+public interface UserDao extends JpaRepository<UserRecord, Long> {
 }

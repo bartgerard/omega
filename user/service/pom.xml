@@ -13,6 +13,11 @@
 
     <dependencies>
 
+        <!-- BeGerard -->
+        <dependency>
+            <groupId>be.gerard</groupId>
+            <artifactId>user-shared</artifactId>
+        </dependency>
         <dependency>
             <groupId>be.gerard</groupId>
             <artifactId>value-service</artifactId>
@@ -22,11 +27,13 @@
             <artifactId>persistence-shared</artifactId>
         </dependency>
 
+        <!-- Das Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- H2 Oooh! -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

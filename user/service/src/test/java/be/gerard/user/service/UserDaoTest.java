@@ -1,6 +1,6 @@
 package be.gerard.user.service;
 
-import be.gerard.user.service.config.UserConfig;
+import be.gerard.user.config.UserConfig;
 import be.gerard.user.service.dao.UserDao;
 import be.gerard.user.service.model.UserRecord;
 import be.gerard.user.service.value.FirstNameRecord;

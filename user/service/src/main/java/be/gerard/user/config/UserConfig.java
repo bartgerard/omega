@@ -1,4 +1,4 @@
-package be.gerard.user.service.config;
+package be.gerard.user.config;
 
 import be.gerard.persistence.shared.v1.UserAuditorAware;
 import be.gerard.user.service.dao.UserDao;

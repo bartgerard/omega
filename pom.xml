@@ -60,6 +60,11 @@
             </dependency>
             <dependency>
                 <groupId>be.gerard</groupId>
+                <artifactId>user-service</artifactId>
+                <version>${gerard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>be.gerard</groupId>
                 <artifactId>persistence-shared</artifactId>
                 <version>${gerard.version}</version>
             </dependency>
@@ -118,6 +123,12 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- MapStruct -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>LATEST</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

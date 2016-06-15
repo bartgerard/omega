@@ -9,20 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>user-shared</artifactId>
+    <artifactId>user-web</artifactId>
 
     <dependencies>
 
-        <!-- Do, Re, Me me me! -->
+        <!-- BeGerard -->
         <dependency>
             <groupId>be.gerard</groupId>
-            <artifactId>value-shared</artifactId>
+            <artifactId>user-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>be.gerard</groupId>
+            <artifactId>provider</artifactId>
         </dependency>
 
-        <!-- MapStruct -->
+        <!-- Das Boot -->
         <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct-jdk8</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
     </dependencies>
